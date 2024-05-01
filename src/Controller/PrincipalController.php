@@ -33,14 +33,14 @@ class PrincipalController extends AbstractController
     #[Route('/contact', name: 'app_contact')]
     public function contact(): Response
     {
-        $message="page contact";
+        $message="contact";
         return $this->render('model.html.twig',['message'=>$message]);
     }
 
     #[Route('/services', name: 'app_services')]
     public function services(): Response
     {
-        $message="page services";
+        $message="services";
         return $this->render('model.html.twig',['message'=>$message]);
     }
 }
